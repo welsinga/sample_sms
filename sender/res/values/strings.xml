@@ -1,0 +1,10 @@
+<resources>
+
+    <string name="app_name">Sample SMS - Sender</string>
+    
+    <string name="text_hint_number">Phone number</string>
+    <string name="text_hint_message">Message</string>
+    
+    <string name="text_button_send">Send</string>
+    
+</resources>
