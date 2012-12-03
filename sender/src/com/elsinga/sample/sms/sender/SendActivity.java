@@ -47,11 +47,10 @@ public class SendActivity extends Activity
   {
 
     PendingIntent sent = this.createPendingResult(SENT, new Intent(), PendingIntent.FLAG_UPDATE_CURRENT);
-    PendingIntent received = this.createPendingResult(RECEIVED, new Intent(), PendingIntent.FLAG_UPDATE_CURRENT);
     String messageText = _message.getText().toString();
 
     SmsManager smsManager = SmsManager.getDefault();
-    smsManager.sendDataMessage(_phoneNumber.getText().toString(), null, SMS_PORT, messageText.getBytes(), sent, received);
+    smsManager.sendDataMessage(_phoneNumber.getText().toString(), null, SMS_PORT, messageText.getBytes(), sent, null);
   }
 
   @Override

@@ -49,10 +49,8 @@ public class Receiver extends BroadcastReceiver
     }
 
     Intent result = new Intent(context, ReceiveActivity.class);
-    result.putExtra(ReceiveActivity.MESSAGE, recMsgString);
-    result.putExtra(ReceiveActivity.FROM, fromAddress);
+    result.putExtra(ReceiveActivity.MESSAGE, "Received SMS from " + fromAddress + ": " + recMsgString);
     result.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
     context.startActivity(result);
-
   }
 }

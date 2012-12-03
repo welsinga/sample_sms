@@ -18,14 +18,13 @@
         <receiver android:name=".Receiver" >
             <intent-filter>
                 <action android:name="android.intent.action.DATA_SMS_RECEIVED" />
+
                 <data android:scheme="sms" />
                 <data android:port="8998" />
             </intent-filter>
         </receiver>
 
         <activity android:name=".ReceiveActivity" >
-        </activity>
-        <activity android:name=".MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
