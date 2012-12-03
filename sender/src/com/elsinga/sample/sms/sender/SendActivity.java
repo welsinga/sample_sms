@@ -14,7 +14,6 @@ import android.widget.Toast;
 public class SendActivity extends Activity
 {
   private static final int   SENT     = 1;
-  private static final int   RECEIVED = 2;
 
   private static final short SMS_PORT = 8998;
 
